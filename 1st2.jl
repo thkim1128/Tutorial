@@ -10,3 +10,5 @@ writecsv("test.csv", A)
 
 C = ["Galaxy" "planet"; "Milky way" "Earth"]
 writecsv("galaxy.csv", C)
+
+println(C)
