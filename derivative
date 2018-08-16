@@ -1,0 +1,13 @@
+#derivative function w/ julia
+function derivative(f)
+  h = 1e-06
+  return x -> (f(x+h) - f(x))/h
+end
+
+dsin = derivative(sin)
+dcos = derivative(cos)
+
+print([dsin(x) for x = 0:6]) 
+#dsin(x) x = [0 1 2 3 4 5 6]
+
+  
